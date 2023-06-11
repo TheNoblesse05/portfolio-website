@@ -1,0 +1,90 @@
+.main-container {
+    position: relative;
+    top: -24vh;
+    transform: translate(-62vw, -20vh);
+    animation: scene-name-appear 2s;
+  }
+  
+  .main-container-dark {
+    position: relative;
+    transform: translate(-62vw, -20vh);
+    color: #f0f0f0;
+  }
+  
+  @keyframes scene-name-appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  .modus {
+    white-space: pre;
+    font-family: 'Inter';
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    opacity: 0;
+    animation: scene-name-appear 4s 1s forwards;
+  }
+  
+  .myname {
+    white-space: pre;
+    font-family: 'Inter';
+    font-size: var(--fs-name-title);
+    font-weight: bold;
+    letter-spacing: 0em;
+    margin-top: 0em;
+  }
+  
+  .developer {
+    position: relative;
+    white-space: pre;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0em;
+    margin-top: 0.1em;
+    opacity: 0;
+    animation: scene-name-appear 2s 1s forwards;
+  }
+  
+  .developer-dark {
+    position: relative;
+    white-space: pre;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0em;
+    margin-top: 0.1em;
+    opacity: 0;
+    animation: scene-name-appear 2s 1s forwards;
+  }
+  
+  @keyframes creative-appear {
+    from  {
+            opacity: 0;
+            transform: translate3d(-50px, 0, 0);
+          }
+    to  {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    * {
+      --fs-name-title: 42px;
+    }
+    .main-container {
+      top: 24vh;
+      right: -13.5vh;
+    }
+    .myname {
+      font-size: 42px;
+    }
+    .developer {
+      font-size: 18px;
+    }
+    .modus {
+      font-size: 7.5px;
+    }
+  }

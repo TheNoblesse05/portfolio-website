@@ -1,0 +1,125 @@
+.aboutme-main-container {
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.1);
+    width: 80%;
+    left: 10%;
+    height: 95%;
+    top: 5%;
+    border-width: 2px 2px 0 2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.skill-tree {
+    width: 55%;
+    height: 100%;
+    float: right;
+}
+
+.aboutme-text {
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.aboutme-text-dark {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    color: #f0f0f0;
+}
+
+.aboutme-title {
+    color: #336699;
+    white-space: pre;
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 0em;
+    margin-top: 0em;
+}
+
+.aboutme-desc {
+    white-space: pre-line;
+    font-family: 'Inter';
+    font-size: 22px;
+    max-width: 60vw;
+    letter-spacing: 0em;
+    margin-top: 0.3em;
+}
+
+.canvas-style {
+    cursor: grab;
+}
+
+.canvas-style:active {
+    cursor: grabbing;
+}
+
+.aboutme-rive {
+    height: 80%;
+    position: relative;
+    left: -10vw;
+    top: -5vh;
+}
+
+.blur {
+    position: relative;
+    left: 50%;
+    top: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: violet;
+    border: 1px solid black ;
+}
+
+.circle{
+    border-radius: 50%;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    height: 20px;
+    width: 20px;
+    background: crimson;
+}
+
+.blurrr{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.07);
+    width: 50%;
+    height: 50%;
+    backdrop-filter: blur(5px);
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutme-title {
+        font-size: 42px;
+    }
+    .aboutme-desc {
+        font-size: 16px;
+    }
+    .aboutme-rive {
+        height: 41%;
+        left: -56vw;
+        top: -30vh;
+        z-index: -1;
+    }
+    .skill-tree {
+        float: initial;
+        width: 80%;
+        height: 80%;
+        position: relative;
+        top: 15vh;
+        left: -3vw;
+    }
+}

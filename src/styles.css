@@ -1,0 +1,184 @@
+@import url('https://rsms.me/inter/inter.css');
+
+* {
+  box-sizing: border-box;
+  --fs-name-title: 64px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff transparent;
+  border-radius: 20px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border: 6px solid rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cecece;
+}
+
+html,
+body,
+#root,
+main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: overlay;
+  scrollbar-color: #8bb8e5 transparent;
+  scrollbar-width: thin;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0iI0U4QjA1OSIvPjwvc3ZnPg=='),
+    auto;
+}
+
+main {
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+}
+
+.app-main-container {
+  height: 100vh;
+  position: absolute;
+}
+
+.pages-home {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pages-filler {
+  position: relative;
+  z-index: -99;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pages {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.canvas {
+  order: 2;
+  flex: 1;
+  height: 100%;
+}
+
+.overlay {
+  position: relative;
+  order: 1;
+  flex: 1;
+  pointer-events: none;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  position: relative;
+  top: -24vh;
+  transform: translate(-62vw, -20vh);
+  animation: scene-name-appear 2s;
+}
+
+.main-container-dark {
+  position: relative;
+  transform: translate(-62vw, -20vh);
+  color: #f0f0f0;
+}
+
+@keyframes scene-name-appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.modus {
+  white-space: pre;
+  font-family: 'Inter';
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  opacity: 0;
+  animation: scene-name-appear 4s 1s forwards;
+}
+
+.myname {
+  white-space: pre;
+  font-family: 'Inter';
+  font-size: var(--fs-name-title);
+  font-weight: bold;
+  letter-spacing: 0em;
+  margin-top: 0em;
+}
+
+.developer {
+  position: relative;
+  white-space: pre;
+  font-family: 'Inter';
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0em;
+  margin-top: 0.1em;
+  opacity: 0;
+  animation: scene-name-appear 2s 1s forwards;
+}
+
+.developer-dark {
+  position: relative;
+  white-space: pre;
+  font-family: 'Inter';
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0em;
+  margin-top: 0.1em;
+  opacity: 0;
+  animation: scene-name-appear 2s 1s forwards;
+}
+
+@keyframes creative-appear {
+  from  {
+          opacity: 0;
+          transform: translate3d(-50px, 0, 0);
+        }
+  to  {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    --fs-name-title: 42px;
+  }
+  .main-container {
+    top: 24vh;
+    right: -13.5vh;
+  }
+  .myname {
+    font-size: 42px;
+  }
+  .developer {
+    font-size: 18px;
+  }
+  .modus {
+    font-size: 7.5px;
+  }
+}

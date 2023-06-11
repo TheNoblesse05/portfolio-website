@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6d22044.css",
+    "main.js": "/static/js/main.d61a4892.js",
+    "static/media/resume.pdf": "/static/media/resume.9a9b8e374a9bc94a875f.pdf",
+    "static/media/resume_dark.svg": "/static/media/resume_dark.9164e58bf793d1427c50ee79e697a44b.svg",
+    "static/media/resume_light.svg": "/static/media/resume_light.5c3bfd9eb5f03e81b07eda6856eccb57.svg",
+    "static/media/aruba-logo.svg": "/static/media/aruba-logo.ee81aecc22cff292baa037a4c5e2482b.svg",
+    "static/media/github_dark.svg": "/static/media/github_dark.6791f439bdb2863fab53594344a8dd3a.svg",
+    "static/media/github_light.svg": "/static/media/github_light.d7bab3ff40a648c30fea2c168e083520.svg",
+    "static/media/linkedin_dark.svg": "/static/media/linkedin_dark.1ebc4a27b3b029ab93dc6fbadf259da5.svg",
+    "static/media/linkedin_light.svg": "/static/media/linkedin_light.7a3a61a794a369aab3914044698d6e76.svg",
+    "static/media/mail_dark.svg": "/static/media/mail_dark.4123473427dd834554120bd3fff29864.svg",
+    "static/media/mail_light.svg": "/static/media/mail_light.5a8783d09f84a259d25eedde563f524e.svg",
+    "index.html": "/index.html",
+    "main.e6d22044.css.map": "/static/css/main.e6d22044.css.map",
+    "main.d61a4892.js.map": "/static/js/main.d61a4892.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6d22044.css",
+    "static/js/main.d61a4892.js"
+  ]
+}
