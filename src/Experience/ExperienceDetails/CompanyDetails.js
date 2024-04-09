@@ -22,9 +22,8 @@ export default function CompanyDetails({companyID, colorSelection, colorCombinat
                         Aruba is the global leader in wired, wireless, and SD-WAN solutions that use AI to automate and secure the network from edge-to-cloud.
                         <ul>
                             <li><div>I build & maintain their cloud-based networking solution website - Aruba Central.</div></li>
-                            <li><div>Designed and implemented a high-volume search bar that processes over 9,000+ monthly queries, delivering user device information, relevant in-page navigation, and summarized documentation with citations using Large Language Models (LLMs).</div></li>
+                            <li><div>Designed and implemented a high-volume search bar, delivering user device information, relevant in-page navigation, and summarized documentation with citations using LLMs.</div></li>
                             <li><div>Integrated Captive Portals for seamless client authentication within Aruba Central.</div></li>
-                            <li><div>Led the migration of containerized applications from x86 to ARM processors.</div></li>
                         </ul> 
                     </div>
                 </>
