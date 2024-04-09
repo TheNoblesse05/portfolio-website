@@ -37,9 +37,9 @@ function Word({ children, ...props }) {
       const thetaSpan = (Math.PI * 2) / count
       const skills = [
         [],
-        ['Angular','FastAPI','SQL'],
+        ['Redux','FastAPI','Typescript'],
         ['React','Python','Flutter'],
-        ['ThreeJS','BERT/GPT','Docker'],
+        ['ThreeJS','SQL','Docker'],
       ]
       for (let i = 1; i < count + 1; i++)
         for (let j = 0; j < count; j++) temp.push([new THREE.Vector3().setFromSpherical(spherical.set(radius, phiSpan * i, thetaSpan * j)), skills[i][j]])
