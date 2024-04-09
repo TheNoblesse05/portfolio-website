@@ -13,7 +13,7 @@ export default function Header({backgroundC, colorSelection, colorCombinations})
         <div className='header'>
             <div className='icons'>
                 <div className='mail' data-tip="Mail">
-                    <ButtonMailto email='vptilwani@gmail.com' subject='Hello'>
+                    <ButtonMailto email='vedant.tilwani@gmail.com' subject='Hello'>
                     <img src = {mail_light} alt="Mail SVG"/>
                     </ButtonMailto>
                     <ReactTooltip place="right" textColor={colorCombinations[colorSelection][3]} backgroundColor={colorCombinations[colorSelection][1]} effect="solid"/>
